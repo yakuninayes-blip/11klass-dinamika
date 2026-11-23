@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Выпускники 2028 — общая информация</title>
+<style>
+  :root { --bg:#f4f6fb; --card:#ffffff; --text:#1c2733; --muted:#6b7a8d; --accent:#2f6fed; }
+  * { box-sizing:border-box; }
+  body { font-family:'Segoe UI', Arial, sans-serif; background:var(--bg); color:var(--text); margin:0; padding:32px 16px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  .subtitle { color:var(--muted); margin:0 0 28px; }
+  .cards { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:32px; }
+  .card { flex:1 1 160px; background:var(--card); border-radius:14px; padding:18px 20px; box-shadow:0 2px 10px rgba(20,40,80,.07); }
+  .card .num { font-size:30px; font-weight:700; color:var(--accent); }
+  .card .lbl { font-size:13px; color:var(--muted); margin-top:4px; }
+  h2 { font-size:20px; margin:36px 0 14px; }
+  .panel { background:var(--card); border-radius:14px; padding:20px 22px; box-shadow:0 2px 10px rgba(20,40,80,.07); }
+  .bar-row { display:grid; grid-template-columns:220px 1fr 90px; align-items:center; gap:12px; margin:8px 0; }
+  .bar-row .name { font-size:14px; }
+  .bar-track { background:#eef2f8; border-radius:6px; height:20px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:6px; background:linear-gradient(90deg,#4d8bff,#2f6fed); min-width:14px; }
+  .bar-val { font-size:14px; font-weight:600; text-align:right; white-space:nowrap; }
+  .badge { display:inline-block; padding:3px 10px; border-radius:20px; font-size:12px; font-weight:600; color:#fff; }
+  table { width:100%; border-collapse:collapse; }
+  th { text-align:left; font-size:13px; text-transform:uppercase; letter-spacing:.4px; color:var(--muted); padding:10px 12px; border-bottom:2px solid #e4eaf2; }
+  td { padding:12px; border-bottom:1px solid #eef2f8; font-size:15px; vertical-align:top; }
+  tr:hover td { background:#f7f9fd; }
+  .gpa { font-weight:700; }
+  .gpa.high { color:#2e9e5b; } .gpa.mid { color:#c98a00; } .gpa.low { color:#d64545; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; }
+  .chip { font-size:12.5px; padding:3px 10px; border-radius:14px; background:#eef3ff; color:#2c5bd1; white-space:nowrap; }
+  .chip.math-pro { background:#e8f6ee; color:#1f7a46; font-weight:600; }
+  .note { margin-top:36px; font-size:13px; color:var(--muted); border-top:1px solid #e4eaf2; padding-top:14px; }
+  @media print { body{background:#fff;padding:10px;} .panel{box-shadow:none;border:1px solid #e4eaf2;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Выпускники 2028 года — общая информация</h1>
+<p class="subtitle">Профили обучения, средний балл аттестата и предметы ЕГЭ</p>
+
+<div class="cards">
+  <div class="card"><div class="num">25</div><div class="lbl">выпускников</div></div>
+  <div class="card"><div class="num">2</div><div class="lbl">профиля обучения</div></div>
+  <div class="card"><div class="num">4,4</div><div class="lbl">средний балл аттестата по классу</div></div>
+  <div class="card"><div class="num">100%</div><div class="lbl">планируют поступать в ВУЗ</div></div>
+</div>
+
+<h2>Раскладка по предметам ЕГЭ</h2>
+<div class="panel"><div class="bar-row"><div class="name">Русский язык</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">25 чел. · 100%</div></div>
+<div class="bar-row"><div class="name">Математика (база)</div><div class="bar-track"><div class="bar-fill" style="width:64%"></div></div><div class="bar-val">16 чел. · 64%</div></div>
+<div class="bar-row"><div class="name">Биология</div><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><div class="bar-val">10 чел. · 40%</div></div>
+<div class="bar-row"><div class="name">Математика (профиль)</div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="bar-val">9 чел. · 36%</div></div>
+<div class="bar-row"><div class="name">Обществознание</div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="bar-val">9 чел. · 36%</div></div>
+<div class="bar-row"><div class="name">Химия</div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="bar-val">9 чел. · 36%</div></div>
+<div class="bar-row"><div class="name">Физика</div><div class="bar-track"><div class="bar-fill" style="width:28%"></div></div><div class="bar-val">7 чел. · 28%</div></div>
+<div class="bar-row"><div class="name">История</div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><div class="bar-val">5 чел. · 20%</div></div>
+<div class="bar-row"><div class="name">География</div><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div><div class="bar-val">2 чел. · 8%</div></div>
+<div class="bar-row"><div class="name">Информатика</div><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><div class="bar-val">1 чел. · 4%</div></div>
+</div>
+
+<h2>Раскладка по среднему баллу аттестата</h2>
+<div class="panel">
+  <div class="bar-row"><div class="name">4,5 – 5,0 (отлично)</div><div class="bar-track"><div class="bar-fill" style="width:36%; background:linear-gradient(90deg,#43c57d,#2e9e5b);"></div></div><div class="bar-val">9 чел. · 36%</div></div>
+  <div class="bar-row"><div class="name">4,0 – 4,49 (хорошо)</div><div class="bar-track"><div class="bar-fill" style="width:64%; background:linear-gradient(90deg,#ffc23d,#f0a500);"></div></div><div class="bar-val">16 чел. · 64%</div></div>
+</div>
+
+<h2>Список выпускников</h2>
+<div class="panel">
+<table>
+  <tr><th>№</th><th>ФИО</th><th>Профиль</th><th>Ср. балл аттестата</th><th>Траектория</th><th>Предметов ЕГЭ</th><th>Предметы ЕГЭ</th></tr>
+  <tr><td>1</td><td>Бадоян Арман Ашотович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,4</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>2</td><td>Бузырев Максим Тимурович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">5,0</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>3</td><td>Гаврилюк Агата Гагиковна</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,3</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>4</td><td>Гагарин Георгий Араевич</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,4</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>5</td><td>Егоров Даниил Владимирович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">4,5</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>6</td><td>Золотарева София Александровна</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,4</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>7</td><td>Кисляков Матвей Валерьевич</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">История</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>8</td><td>Крохмальный Степан Андреевич</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,3</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">История</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>9</td><td>Лаская Елизавета Андреевна</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,3</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>10</td><td>Лунгу Маргарита Александровна</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">5,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Информатика</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>11</td><td>Малахов Захар Андреевич</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">4,7</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>12</td><td>Мотякин Максим Антонович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">История</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>13</td><td>Носов Артём Александрович</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">История</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>14</td><td>Пакин Дмитрий Андреевич</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa high">4,5</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>15</td><td>Палилов Михаил Александрович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">4,6</td><td>ВУЗ</td><td>3</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span></div></td></tr>
+<tr><td>16</td><td>Пантелеев Богдан Алексеевич</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,2</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">География</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>17</td><td>Рахимов Батыр Борисович</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>18</td><td>Сапарвалиева Малика Жумалмуродовна</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,1</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>19</td><td>Станцова Мария Олеговна</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa high">5,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>20</td><td>Троицкий Тимофей Артёмович</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,4</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>21</td><td>Уйманов Илья Андреевич</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa high">4,6</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>22</td><td>Уткин Фёдор Витальевич</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,4</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+<tr><td>23</td><td>Хохлова Дарья Сергеевна</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa high">4,8</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip math-pro">Математика (профиль)</span><span class="chip">Физика</span><span class="chip">География</span></div></td></tr>
+<tr><td>24</td><td>Хусайнов Юсуф Хуршедович</td><td><span class="badge" style="background:#f0a500" title="Социально-экономический">СЭ</span></td><td class="gpa mid">4,1</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">История</span><span class="chip">Обществознание</span></div></td></tr>
+<tr><td>25</td><td>Юхвиц Юлия Сергеевна</td><td><span class="badge" style="background:#3aa981" title="Естественно-научный">ЕН</span></td><td class="gpa mid">4,0</td><td>ВУЗ</td><td>4</td><td><div class="chips"><span class="chip">Русский язык</span><span class="chip">Математика (база)</span><span class="chip">Биология</span><span class="chip">Химия</span></div></td></tr>
+
+</table>
+</div>
+
+<p class="note">Профили: <span class="badge" style="background:#f0a500">СЭ</span> — социально-экономический (математика, обществознание) — 13 чел. · <span class="badge" style="background:#3aa981">ЕН</span> — естественно-научный (биология, химия) — 12 чел.<br>
+Средний балл аттестата: зелёный — 4,5 и выше, жёлтый — 4,0–4,49.</p>
+
+</div>
+</body>
+</html>
